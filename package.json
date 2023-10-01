@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "I am making this backend for my ecommerce application in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "mern",
+    "backend",
+    "ecommerce"
+  ],
+  "author": "sdeabhi",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
