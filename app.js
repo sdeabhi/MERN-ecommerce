@@ -5,6 +5,10 @@ const {getConnect } = require('./config/db');
 const productRouter  = require("./routes/productRouter");
 const brandRouter  = require("./routes/brandRouter");
 const categoryRouter  = require("./routes/categoryRouter");
+const UsersRouter  = require("./routes/UsersRouter");
+const AuthRouter  = require("./routes/AuthRouter");
+const cartRouter  = require("./routes/cartRouter");
+const orderRouter  = require("./routes/orderRouter");
 
 getConnect();
 
@@ -19,6 +23,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/products', productRouter);
 app.use('/brands', brandRouter);
 app.use('/categories', categoryRouter);
+app.use('/users', UsersRouter);
+app.use('/auth', AuthRouter);
+app.use('/cart', cartRouter);
+app.use('/order', orderRouter);
 
 
 
